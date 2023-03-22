@@ -1,26 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+    <user-items></user-items>
+    <optional-items></optional-items>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import UserItems from './components/UserItems.vue'
+import OptionalItems from './components/OptionalItems.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    UserItems,
+    OptionalItems,
+  },
 }
 </script>
 
 <style lang="scss">
+@import './assets/style.scss';
+
 #app {
+  display: flex;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
